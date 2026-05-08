@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal San Pedro Sur - Descarga Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --aptoide-orange: #ff6b00;
+            --dark-orange: #e65a00;
+            --text-dark: #222222;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--aptoide-orange); /* FONDO NARANJA TOTAL */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor Blanco Estilo Aptoide */
+        .app-card {
+            background: white;
+            width: 90%;
+            max-width: 550px;
+            margin: 40px 0;
+            border-radius: 28px;
+            padding: 35px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .app-header {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .app-icon {
+            width: 110px;
+            height: 110px;
+            border-radius: 22px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .app-title h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text-dark);
+            text-transform: uppercase;
+        }
+
+        .dev-name {
+            color: var(--aptoide-orange);
+            font-weight: 700;
+            font-size: 14px;
+            display: block;
+            margin-top: 4px;
+        }
+
+        /* Check de Seguridad */
+        .security-badge {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Botón de Instalación */
+        .install-btn {
+            background-color: var(--aptoide-orange);
+            color: white;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            padding: 20px;
+            border-radius: 15px;
+            font-weight: 800;
+            font-size: 22px;
+            box-shadow: 0 8px 0px var(--dark-orange);
+            transition: all 0.1s;
+            margin-bottom: 30px;
+        }
+
+        .install-btn:active {
+            transform: translateY(4px);
+            box-shadow: 0 4px 0px var(--dark-orange);
+        }
+
+        /* Mensaje de Agradecimiento */
+        .thanks-box {
+            text-align: left;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid var(--aptoide-orange);
+            margin-bottom: 25px;
+        }
+
+        .thanks-box p {
+            margin: 0;
+            font-size: 14px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* Info Técnica */
+        .info-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .info-item span { font-size: 11px; color: #888; display: block; }
+        .info-item strong { font-size: 15px; color: var(--text-dark); }
+
+        /* SELLO DJKEVIN PRODUCCIONES */
+        .sello-final {
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .sello-box {
+            border: 2px solid white;
+            padding: 10px 25px;
+            display: inline-block;
+            border-radius: 8px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 480px) {
+            .app-header { flex-direction: column; text-align: center; }
+            .app-title h1 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-card">
+        <div class="app-header">
+            <img src="https://i.postimg.cc/63T8J1B7/Airbrush-BG-CHANGER-1775689938420-jpg.png" class="app-icon" alt="Logo Radio">
+            <div class="app-title">
+                <h1>Portal San Pedro Sur</h1>
+                <span class="dev-name">DISTRIBUIDO POR DJKEVIN</span>
+                <div style="color: #ffb400; margin-top: 5px;">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="security-badge">
+            <i class="fas fa-shield-check"></i> APLICACIÓN VERIFICADA Y SEGURA
+        </div>
+
+        <div class="thanks-box">
+            <p><strong>¡Muchas gracias por apoyarnos!</strong> Descarga nuestra radio oficial y disfruta de la mejor programación. Tu apoyo nos motiva a seguir creciendo.</p>
+        </div>
+
+        <!-- ENLACE AL APK -->
+        <a href="portal-san-pedro.apk" class="install-btn" download>INSTALAR</a>
+
+        <div class="info-row">
+            <div class="info-item">
+                <span>TAMAÑO</span>
+                <strong>12.5 MB</strong>
+            </div>
+            <div class="info-item">
+                <span>VERSIÓN</span>
+                <strong>1.0.5</strong>
+            </div>
+            <div class="info-item">
+                <span>DESCARGAS</span>
+                <strong>+5,000</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- SELLO DJKEVIN PRODUCCIONES -->
+    <div class="sello-final">
+        <p style="font-size: 10px; letter-spacing: 3px; margin-bottom: 8px;">CALIDAD GARANTIZADA POR</p>
+        <div class="sello-box">
+            DJKEVIN PRODUCCIONES
+        </div>
+    </div>
+
+</body>
+</html>
