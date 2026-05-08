@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal San Pedro Sur - Descarga Oficial</title>
+    <title>Portal San Pedro Sur - Descarga APK</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -24,15 +24,15 @@
             min-height: 100vh;
         }
 
-        /* Contenedor Blanco Estilo Aptoide */
+        /* Contenedor Estilo Aptoide */
         .app-card {
             background: white;
             width: 90%;
-            max-width: 550px;
+            max-width: 500px;
             margin: 40px 0;
             border-radius: 28px;
-            padding: 35px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            padding: 30px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
             text-align: center;
         }
 
@@ -45,11 +45,11 @@
         }
 
         .app-icon {
-            width: 110px;
-            height: 110px;
+            width: 100px;
+            height: 100px;
             border-radius: 22px;
             object-fit: cover;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
         .app-title h1 {
@@ -57,7 +57,7 @@
             font-size: 22px;
             font-weight: 800;
             color: var(--text-dark);
-            text-transform: uppercase;
+            line-height: 1.2;
         }
 
         .dev-name {
@@ -68,7 +68,7 @@
             margin-top: 4px;
         }
 
-        /* Check de Seguridad */
+        /* Badge de Seguridad */
         .security-badge {
             background: #e8f5e9;
             color: #2e7d32;
@@ -83,20 +83,22 @@
             gap: 8px;
         }
 
-        /* Botón de Instalación */
+        /* BOTÓN DE INSTALACIÓN */
         .install-btn {
             background-color: var(--aptoide-orange);
             color: white;
             text-decoration: none;
             display: block;
             width: 100%;
-            padding: 20px;
-            border-radius: 15px;
+            padding: 22px;
+            box-sizing: border-box;
+            border-radius: 18px;
             font-weight: 800;
-            font-size: 22px;
+            font-size: 24px;
             box-shadow: 0 8px 0px var(--dark-orange);
             transition: all 0.1s;
             margin-bottom: 30px;
+            text-transform: uppercase;
         }
 
         .install-btn:active {
@@ -104,14 +106,15 @@
             box-shadow: 0 4px 0px var(--dark-orange);
         }
 
-        /* Mensaje de Agradecimiento */
+        /* Mensaje de Apoyo */
         .thanks-box {
             text-align: left;
-            background: #f8f9fa;
-            padding: 20px;
+            background: #fdfdfd;
+            padding: 18px;
             border-radius: 15px;
             border-left: 5px solid var(--aptoide-orange);
             margin-bottom: 25px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
         }
 
         .thanks-box p {
@@ -125,29 +128,30 @@
         .info-row {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            border-top: 1px solid #eee;
+            border-top: 1px solid #f0f0f0;
             padding-top: 20px;
         }
 
-        .info-item span { font-size: 11px; color: #888; display: block; }
+        .info-item span { font-size: 11px; color: #999; display: block; text-transform: uppercase; }
         .info-item strong { font-size: 15px; color: var(--text-dark); }
 
         /* SELLO DJKEVIN PRODUCCIONES */
         .sello-final {
-            margin-top: 20px;
+            margin-top: 10px;
             color: white;
             text-align: center;
-            padding-bottom: 40px;
+            padding-bottom: 50px;
         }
 
         .sello-box {
             border: 2px solid white;
-            padding: 10px 25px;
+            padding: 12px 30px;
             display: inline-block;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: 800;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
+            background: rgba(0,0,0,0.1);
         }
 
         @media (max-width: 480px) {
@@ -159,47 +163,53 @@
 <body>
 
     <div class="app-card">
+        <!-- Cabecera con Logo -->
         <div class="app-header">
-            <img src="https://i.postimg.cc/63T8J1B7/Airbrush-BG-CHANGER-1775689938420-jpg.png" class="app-icon" alt="Logo Radio">
+            <img src="https://i.postimg.cc/63T8J1B7/Airbrush-BG-CHANGER-1775689938420-jpg.png" class="app-icon" alt="Logo Portal San Pedro">
             <div class="app-title">
                 <h1>Portal San Pedro Sur</h1>
-                <span class="dev-name">DISTRIBUIDO POR DJKEVIN</span>
-                <div style="color: #ffb400; margin-top: 5px;">
+                <span class="dev-name">DJKEVIN PRODUCCIONES</span>
+                <div style="color: #ffb400; margin-top: 5px; font-size: 12px;">
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span style="color: #888; margin-left: 5px;">(5.0)</span>
                 </div>
             </div>
         </div>
 
+        <!-- Check de Seguridad Estilo Pro -->
         <div class="security-badge">
             <i class="fas fa-shield-check"></i> APLICACIÓN VERIFICADA Y SEGURA
         </div>
 
         <div class="thanks-box">
-            <p><strong>¡Muchas gracias por apoyarnos!</strong> Descarga nuestra radio oficial y disfruta de la mejor programación. Tu apoyo nos motiva a seguir creciendo.</p>
+            <p><strong>¡Gracias por tu apoyo!</strong> Al descargar nuestra app oficial, nos ayudas a seguir llevando la mejor música a toda la comunidad.</p>
         </div>
 
-        <!-- ENLACE AL APK -->
-        <a href="portal-san-pedro.apk" class="install-btn" download>INSTALAR</a>
+        <!-- EL BOTÓN CON TU LINK DE RELEASE -->
+        <a href="https://github.com/MorelDa/radio-portal/releases/download/v1.0/portal-san-pedro.apk" class="install-btn">
+            <i class="fas fa-download"></i> INSTALAR
+        </a>
 
+        <!-- Datos Técnicos -->
         <div class="info-row">
             <div class="info-item">
-                <span>TAMAÑO</span>
-                <strong>12.5 MB</strong>
+                <span>PESO</span>
+                <strong>31 MB</strong>
             </div>
             <div class="info-item">
                 <span>VERSIÓN</span>
                 <strong>1.0.5</strong>
             </div>
             <div class="info-item">
-                <span>DESCARGAS</span>
-                <strong>+5,000</strong>
+                <span>REQUISITOS</span>
+                <strong>Android</strong>
             </div>
         </div>
     </div>
 
-    <!-- SELLO DJKEVIN PRODUCCIONES -->
+    <!-- SELLO DE GARANTÍA -->
     <div class="sello-final">
-        <p style="font-size: 10px; letter-spacing: 3px; margin-bottom: 8px;">CALIDAD GARANTIZADA POR</p>
+        <p style="font-size: 11px; letter-spacing: 2px; margin-bottom: 10px; opacity: 0.9;">DESARROLLADO Y DISTRIBUIDO POR</p>
         <div class="sello-box">
             DJKEVIN PRODUCCIONES
         </div>
