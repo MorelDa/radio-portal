@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    <!-- ETIQUETAS PARA COMPARTIR EL LINK (PREVIEW) -->
-    <title>Portal San Pedro Sur - APK</title>
+    <!-- CONFIGURACIÓN PARA WHATSAPP -->
+    <title>Portal San Pedro Sur</title>
     <meta name="description" content="QUE ESPERAS PARA DESCARGAR LA PP">
     <meta property="og:title" content="Portal San Pedro Sur">
     <meta property="og:description" content="QUE ESPERAS PARA DESCARGAR LA PP">
     <meta property="og:image" content="https://i.postimg.cc/rz6s4S75/KOLO.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://i.postimg.cc/rz6s4S75/KOLO.png">
+    <meta property="og:url" content="https://MorelDa.github.io/radio-portal/">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -35,81 +35,85 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow-x: hidden;
+            align-items: center; /* Centrado vertical absoluto */
+            height: 100vh; /* Ocupa todo el alto */
+            width: 100vw;
+            overflow: hidden;
         }
 
-        /* Contenedor Principal */
+        /* Contenedor más alto y estilizado (Vertical) */
         .app-card {
             background: white;
-            width: 90%;
-            max-width: 400px;
-            border-radius: 30px;
-            padding: 25px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            width: 85%;
+            max-width: 380px;
+            height: auto;
+            min-height: 520px; /* Forzamos que sea más alta */
+            border-radius: 35px;
+            padding: 35px 25px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
             text-align: center;
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribuye el contenido a lo largo */
         }
 
         .app-header {
             display: flex;
-            gap: 15px;
+            flex-direction: column; /* Icono arriba del texto para ganar altura */
             align-items: center;
-            text-align: left;
+            gap: 15px;
             margin-bottom: 20px;
         }
 
         .app-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 18px;
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
             object-fit: cover;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
 
         .app-title h1 {
             margin: 0;
-            font-size: 18px;
+            font-size: 22px;
             font-weight: 800;
             color: var(--text-dark);
-            line-height: 1.1;
+            letter-spacing: -0.5px;
         }
 
         .dev-name {
             color: var(--aptoide-orange);
             font-weight: 700;
-            font-size: 12px;
-            margin-top: 3px;
+            font-size: 14px;
+            margin-top: 5px;
             display: block;
         }
 
         .security-badge {
             background: #e8f5e9;
             color: #2e7d32;
-            padding: 10px;
-            border-radius: 12px;
+            padding: 12px;
+            border-radius: 15px;
             font-weight: 700;
             font-size: 13px;
-            margin-bottom: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
+            gap: 8px;
+            margin-bottom: 20px;
         }
 
         .thanks-box {
-            text-align: left;
+            text-align: center;
             background: #f9f9f9;
             padding: 15px;
-            border-radius: 15px;
-            border-left: 5px solid var(--aptoide-orange);
+            border-radius: 20px;
             margin-bottom: 20px;
         }
 
         .thanks-box p {
             margin: 0;
-            font-size: 13px;
+            font-size: 14px;
             color: #555;
             line-height: 1.5;
         }
@@ -120,96 +124,84 @@
             text-decoration: none;
             display: block;
             width: 100%;
-            padding: 18px;
-            border-radius: 15px;
+            padding: 20px;
+            border-radius: 20px;
             font-weight: 800;
-            font-size: 20px;
-            box-shadow: 0 6px 0px var(--dark-orange);
+            font-size: 22px;
+            box-shadow: 0 8px 0px var(--dark-orange);
             transition: all 0.1s;
-            margin-bottom: 25px;
             text-transform: uppercase;
         }
 
         .install-btn:active {
-            transform: translateY(3px);
-            box-shadow: 0 3px 0px var(--dark-orange);
+            transform: translateY(4px);
+            box-shadow: 0 4px 0px var(--dark-orange);
         }
 
         .info-row {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            border-top: 1px solid #eee;
-            padding-top: 15px;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 20px;
+            margin-top: 20px;
         }
 
-        .info-item span { font-size: 10px; color: #999; display: block; }
-        .info-item strong { font-size: 14px; color: var(--text-dark); }
+        .info-item span { font-size: 11px; color: #aaa; display: block; }
+        .info-item strong { font-size: 15px; color: var(--text-dark); }
 
-        .sello-final {
+        /* Sello final integrado abajo */
+        .footer-brand {
             margin-top: 25px;
-            text-align: center;
             color: white;
-            position: absolute;
-            bottom: -85px;
-            width: 100%;
-            left: 0;
-        }
-
-        .sello-box {
-            border: 1.5px solid white;
-            padding: 8px 20px;
-            display: inline-block;
-            border-radius: 8px;
-            font-weight: 800;
             font-size: 12px;
+            font-weight: 700;
             letter-spacing: 2px;
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
 
-    <div class="app-card">
-        <div class="app-header">
-            <img src="https://i.postimg.cc/63T8J1B7/Airbrush-BG-CHANGER-1775689938420-jpg.png" class="app-icon" alt="Logo">
-            <div class="app-title">
-                <h1>Portal San Pedro Sur</h1>
-                <span class="dev-name">DJKEVIN PRODUCCIONES</span>
-                <div style="color: #ffb400; margin-top: 4px; font-size: 11px;">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+        <div class="app-card">
+            <div class="app-header">
+                <img src="https://i.postimg.cc/63T8J1B7/Airbrush-BG-CHANGER-1775689938420-jpg.png" class="app-icon" alt="Logo">
+                <div class="app-title">
+                    <h1>Portal San Pedro Sur</h1>
+                    <span class="dev-name">DJKEVIN PRODUCCIONES</span>
+                </div>
+            </div>
+
+            <div class="security-badge">
+                <i class="fas fa-check-circle"></i> VERIFICADA Y SEGURA
+            </div>
+
+            <div class="thanks-box">
+                <p>¿QUÉ ESPERAS PARA DESCARGAR LA APP? Disfruta de la mejor radio en vivo.</p>
+            </div>
+
+            <a href="https://github.com/MorelDa/radio-portal/releases/download/v1.0/portal-san-pedro.apk" class="install-btn">
+                <i class="fas fa-download"></i> INSTALAR
+            </a>
+
+            <div class="info-row">
+                <div class="info-item">
+                    <span>PESO</span>
+                    <strong>31 MB</strong>
+                </div>
+                <div class="info-item">
+                    <span>VERSIÓN</span>
+                    <strong>1.0.5</strong>
+                </div>
+                <div class="info-item">
+                    <span>SISTEMA</span>
+                    <strong>Android</strong>
                 </div>
             </div>
         </div>
 
-        <div class="security-badge">
-            <i class="fas fa-shield-alt"></i> VERIFICADA Y SEGURA
-        </div>
-
-        <div class="thanks-box">
-            <p><strong>¡Gracias por tu apoyo!</strong> Descarga nuestra aplicación oficial y disfruta de la mejor programación.</p>
-        </div>
-
-        <a href="https://github.com/MorelDa/radio-portal/releases/download/v1.0/portal-san-pedro.apk" class="install-btn">
-            <i class="fas fa-download"></i> INSTALAR
-        </a>
-
-        <div class="info-row">
-            <div class="info-item">
-                <span>PESO</span>
-                <strong>31 MB</strong>
-            </div>
-            <div class="info-item">
-                <span>VERSIÓN</span>
-                <strong>1.0.5</strong>
-            </div>
-            <div class="info-item">
-                <span>SISTEMA</span>
-                <strong>Android</strong>
-            </div>
-        </div>
-
-        <div class="sello-final">
-            <p style="font-size: 10px; margin-bottom: 5px; opacity: 0.9;">DISTRIBUIDO POR</p>
-            <div class="sello-box">DJKEVIN PRODUCCIONES</div>
+        <div class="footer-brand">
+            DJKEVIN PRODUCCIONES
         </div>
     </div>
 
